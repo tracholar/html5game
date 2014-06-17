@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+			#canvas{
+				border:1px solid #CCC;
+				padding:4px;
+				background:#FFF;
+				
+				display:block;
+			}
+			#startButton{
+				display:block;
+				margin:20px 0;
+				width:100px;
+				height:40px;
+			}
+			#score{
+				font-weight:bold;
+				color:red;
+				
+			}
+			.option{
+				display:inline-block;
+				padding:.4em;
+				background:#CCC;
+				border:3px solid #FFFFFF;
+				font-weight:bold;
+				color:#ffffff;
+				cursor:pointer;
+			}
+			.option.selected{
+				background:#AA0000;
+			}
+		</style>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="game.js"></script>
+	</head>
+	<body>
+		<canvas id="canvas" width="400" height="300"></canvas>
+		<div>
+			<p>
+				你的分数<span id="score">0</span>，我选择
+				<span id="big" class="option selected">大</span><span id="small" class="option">小</span>
+			</p>
+			<button id="startButton">开始</button>
+		</div>
+	</body>
+</html>
